@@ -231,7 +231,7 @@
 1. １０ドット長の横線を１０本、縦に並べるプログラムを書いてみよう
 1. 最終形
     - コピペを活用しよう
-    <details><summary>kadai_03_1 疑似コード</summary>
+    <details><summary>kadai03_1 疑似コード</summary>
     <pre><code>
     60000番スタートかつ10ドット長の横線プログラム
     6****番スタートかつ10ドット長の横線プログラム
@@ -257,7 +257,7 @@
 1. 最終形
     - 文章だけで解説することが難しいので、疑似コードのコメントを参照
         - 過剰なコメントはあくまで解説用（普段はこんな書き方しなくていいです）
-    <details><summary>kadai_03_2 疑似コード</summary>
+    <details><summary>kadai03_2 疑似コード</summary>
     <pre><code>
     memory[1] -> 0  # 縦長さカウンタ
     while memory[1] < ________
@@ -327,7 +327,7 @@
     - whileを使わず、コピペコードでOK
     - 点滅するが、仕組み上どうにもならないので気にしないこと
 - 疑似コード
-    <details><summary>kadai_04 疑似コード</summary>
+    <details><summary>kadai04 疑似コード</summary>
     <pre><code>
     60000を白
     60000を黒
@@ -390,7 +390,7 @@
         - Sunaba君は勝手に判断してくれない。つまり「 `memory[0]` と `memory[1]` は 0 ~ 99 の範囲外に出たらエラーを出す」なんて便利な機能はない<font color="gray">（自分でそういうプログラムを書けばいい。それは後々考えていこう）</font>
 1. まずは、問題ありVer.を示そう
 
-    <details><summary>kadai_07_00 問題ありVer.</summary>
+    <details><summary>kadai07 問題ありVer.</summary>
     <pre><code>
     memory[0] -> 30     # 右方向の位置
     memory[1] -> 40     # 下方向の位置
@@ -417,7 +417,7 @@
     - y方向の画面端に先に到達するので、繰り返し終了条件はyの値で判定する
     - 初期位置x:0, y:0 地点での点の表示は無くてOK。『画面左上端`辺り`から』なので。
 
-    <details><summary>kadai_07_01 疑似コード</summary>
+    <details><summary>kadai07_1 疑似コード</summary>
     <pre><code>
     memory[0] -> 0     # 点のx座標位置
     memory[1] -> 0     # 点のy座標位置
@@ -437,7 +437,7 @@
 - 移動量もメモリで管理してみよう
 - 最終形
 
-    <details><summary>kadai_07_02 疑似コード</summary>
+    <details><summary>kadai07_2 疑似コード</summary>
     <pre><code>
     memory[0] -> 0     # 点のx座標位置
     memory[1] -> 0     # 点のy座標位置
@@ -491,7 +491,7 @@
 
 - 最終形の動きは変えずに、変数を使って書き直そう
     - 点の色も変数にしよう
-    <details><summary>kadai_07_03 疑似コード</summary>
+    <details><summary>kadai07_3 疑似コード</summary>
     <pre><code>
     # 点
     x -> 0     # x座標
@@ -530,7 +530,7 @@
 - `１５×２０の長方形を描く。ただし画面描画は一瞬で。`
 - 一瞬で画面表示する方法は新機能の紹介待ち
 - まずは課題03の四角を描くプログラムをコピーして、大きさを15×20に調整
-    <details><summary>kadai08_ 疑似コード</summary>
+    <details><summary>kadai08 疑似コード</summary>
     <pre><code>
     memory[1] -> 0  # 縦長さカウンタ
     while memory[1] < ________
@@ -564,7 +564,7 @@
     - 今回の課題08で言えば、全ての四角を画面メモリ書き込んだ後、つまり一番最後で実行すればいい
     - 通常のSunaba作品は、ずっと実行し続けるプログラムを書くことになる。いわゆる無限ループである。この場合、どこで画面更新するかが大事になる。この話題は今後の課題で取り組む
 - 最終形
-    <details><summary>kadai08_ 疑似コード</summary>
+    <details><summary>kadai08_1 疑似コード</summary>
     <pre><code>
     手動更新モードに切り替え
     memory[1] -> 0  # 縦長さカウンタ
@@ -609,7 +609,7 @@
     - Sunabaで学習しているうちに、「必要な変数は？」「変数の名前は？」「初期値は？」「必要なコメントは？」の最適な姿を目指し試行錯誤して、それらの情報を冒頭に書くことに慣れておこう
 - プログラム本編のことは`メインプログラム`と呼ぶ
 - 最終形
-    <details><summary>kadai_10_01 疑似コード</summary>
+    <details><summary>kadai10_1 疑似コード</summary>
     <pre><code>
     # 変数宣言
     # 点
@@ -1229,7 +1229,7 @@
     - Sunaba で時刻に似たデータを確保するとしたら`画面更新回数`だろうか。ただそれだけでは起動後の経過時間であり、実行タイミングに依存するため規則性が生まれてしまうかも。
     - Sunabaで完璧な姿を追い求める必要はないと割り切って、`まあまあ納得`くらいを目指せばいいんじゃないかな
 - そんなわけで、`四角を描く`の最終形は線形合同法をそのまま使う
-    <details><summary>kadai14_02</summary>
+    <details><summary>kadai14</summary>
     <pre><code>
     rndx_ -> 1
     rndy_ -> 2
@@ -1279,8 +1279,8 @@
     </code></pre>
     </details>
 
-- 完全版（粘り強く考える前に見に来たらスキルアップ保証しない）
-    <details><summary>kadai14_03</summary>
+- 完全版（粘り強く考えてから開けよう。その前に見たらスキルアップは保証しない）
+    <details><summary>kadai14_1</summary>
     <pre><code>
     # 定数宣言
     const m -> 0
@@ -1376,7 +1376,7 @@
         </code></pre>
 
     - これにpoint関数を組み込むと
-        <details><summary>kadai15_</summary>
+        <details><summary>kadai15 疑似コード</summary>
         <pre><code>
         # 点
         x -> 0     # x座標
@@ -1407,7 +1407,7 @@
     - ループは当然 `while` で作ることになる
     - `while` **`常に真`** とすれば無限ループが実現する。**`常に真`** は `0以外の整数` であれば何でもOKだが、普通は `1` である 
     - 変更を加えてみる
-        <details><summary>kadai15_</summary>
+        <details><summary>kadai15_1 疑似コード</summary>
         <pre><code>
         # 点
         x -> 0     # x座標
@@ -1442,7 +1442,7 @@
     - 画面右端に到達したことをどうやって判断すればいいか
         - もし `x` が `99` になったら。つまり `if x = 99`
     - プログラムに反映すると
-        <details><summary>kadai15_</summary>
+        <details><summary>kadai15_2 疑似コード</summary>
         <pre><code>
         # 点
         x -> 0     # x座標
@@ -1474,7 +1474,7 @@
     - 画面左端でも跳ね返るようにしたい
     - 右の時と同じ要領でプログラムを追加すればいいんじゃないだろうか？
     - `x` が `0 未満` になったら `dx` を`反対方向`にすればいい
-        <details><summary>kadai_15_</summary>
+        <details><summary>kadai15_3 疑似コード</summary>
         <pre><code>
 
         # 点
@@ -1513,7 +1513,7 @@
     - 判定式の結合には、`かつ（and）` と `または（or）` があることは伝えた。ここで使うべきなのは、`または（or）` である
     - Sunabaで `または（or）` を実現するには、各判定式を `+` で連結すればいいことも解説済み。実際に書き換えて動作を確認しよう
     - 最終的に
-        <details><summary>kadai15_</summary>
+        <details><summary>kadai15_4 疑似コード</summary>
         <pre><code>
         # 点
         x -> 0     # x座標
@@ -1542,7 +1542,7 @@
     - 左右方向がスッキリしたので、上下方向も同じように対応してみよう
     - 画面上下端の判定のプログラムは、x方向のものをコピー＆変更
     - 変数の初期値は縦方向のみの動作とする。 `dx -> 0` ,  `dy -> 2` としよう 
-        <details><summary>kadai15_</summary>
+        <details><summary>kadai15_5 疑似コード</summary>
         <pre><code>
         # 点
         x -> 0     # x座標
@@ -1578,7 +1578,7 @@
 - `四角の位置、大きさ、色` は任意
 - 前回の点反射プログラムをコピーして、その中に四角プログラムを追加
 - まずは自力で
-    <details><summary>kadai16_1</summary>
+    <details><summary>kadai16_1 疑似コード</summary>
     <pre><code>
     # 点
     x -> 0     # x座標
@@ -1624,8 +1624,7 @@
     </code></pre>
     </details>
 
-- 完成版（自力で書いてから参照するように）
-
+- 完成版（粘り強く考えてから開けよう。その前に見たらスキルアップは保証しない）
     <details><summary>kadai16_2</summary>
     <pre><code>
     # 点
@@ -1702,7 +1701,7 @@
                 画面更新スイッチON
             </code></pre>
 
-- 完成版（粘り強く考える前に見に来たらスキルアップは保証しない）
+- 完成版（粘り強く考えてから開けよう。その前に見たらスキルアップは保証しない）
     - 点の初期値（位置、方向）を変えて動作確認しよう
     <details><summary>kadai16_3</summary>
     <pre><code>
@@ -1772,9 +1771,8 @@
 ## **課題17**  動く点と、動く四角
 - `画面端で反射する　点：1つ　四角：1つ` を描こう
 - 前回のプログラムをコピーして、四角に動きを加えよう。点のプログラムを真似ればいい
-- まずは自力で。
-
-    <details><summary>kadai17_</summary>
+- まずは自力で！
+    <details><summary>kadai17 改善前</summary>
     <pre><code>
     # 点
     x -> 0  # x座標
@@ -1844,7 +1842,7 @@
     def point(x_, y_, color_)
         if (0 <= x_) * (x_ <= 99) * (0 <= y_) * (y_ <= 99)
             memory[60000 + (y_ * 100) + x_] -> color_
-    </code></pre>\
+    </code></pre>
     </details>
 
     - ちゃんと動く。しかし、気になるのは `『# 前回描画の削除』`の部分。今は動く物体が２つしかないが、これが増えていくと以下のような状態になる
@@ -1926,7 +1924,7 @@
 - ここで作るプログラムは、`右矢印キーを押したら右に行く。 左矢印ボタンを押したら左に行く。上下も。それだけ。`としよう
 - point関数を使えば、画面外に出てもエラーにならないし、画面内に戻ってくることもできる
 - 自力でできるところまで頑張ってみよう
-    <details><summary>kadai18_</summary>
+    <details><summary>kadai18 擬似コード</summary>
     <pre><code>
     # 点
     x -> 0     # x座標
@@ -1978,7 +1976,8 @@
 - キーボードと同じ話なので、早見表を見れば良い
 - 無限ループで常にマウスの状態を確認して、画面メモリに点を書き込む、という構成になる
 - 今回のプログラムは画面更新がないので、Sunabaの基本構成を使わない。関数もpoint関数だけコピーしてくれば事足りるでしょう
-    <details><summary>kadai19_</summary>
+- 完成形（粘り強く考えてから開けよう。その前に見たらスキルアップは保証しない）
+    <details><summary>kadai19</summary>
     <pre><code>
     x -> 0
     y -> 0
@@ -2011,8 +2010,8 @@
 - `キー操作で動く点と、勝手に動く四角が、共存している状態にする`
 - 課題17をベースに書き換えるのが楽だと思う
 - まずは自力で
-
-    <details><summary>kadai21_</summary>
+- 完成形（粘り強く考えてから開けよう。その前に見たらスキルアップは保証しない）
+    <details><summary>kadai21</summary>
     <pre><code>
     # 点
     x -> 0  # x座標
