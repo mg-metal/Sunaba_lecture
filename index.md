@@ -794,7 +794,7 @@
     def point(x_, y_, color_)
         memory[60000 + (y_ * 100) + x_] -> color_
     </code></pre>
-    </datails>
+    </details>  
 
     -  <font color="Silver">実はテキスト作成当初、 `_x` のようにアンダーバーを前に付けていた。C言語には予約語に `_bool` といった形があり、 `変数名に 前付きアンダーバーの使用は避けよ` というルールがある。これを認識していなかったのである
     - 他にもこのような基本的な認識が漏れている可能性がある。疑いの目を持ちつつ、本テキストを使ってくれるとありがたい。そして、教えてもらえるとうれしいです</font>  
@@ -952,7 +952,7 @@
     def point(x_, y_, color_)
         memory[60000 + (y_ * 100) + x_] -> color_
     </code></pre>
-    </datails>  
+    </details>    
 - 横線を関数化しよう。関数名は`lineH`で。（**H**orizontal）
     - 【新情報】`関数の中から関数を呼ぶことは可能`
     <details><summary>記述例</summary>
@@ -976,7 +976,7 @@
     def point(x_, y_, color_)
         memory[60000 + (y_ * 100) + x_] -> color_
     </code></pre>
-    </datails>  
+    </details>    
 
 ---
 ---
@@ -1013,8 +1013,7 @@
     def point(x_, y_, color_)
         memory[60000 + (y_ * 100) + x_] -> color_
     </code></pre>
-
-    </datails>
+    </details>  
 
 
 - 不満な要素を洗い出す
@@ -1681,7 +1680,7 @@
         if (0 <= x_) * (x_ <= 99) * (0 <= y_) * (y_ <= 99)
             memory[60000 + (y_ * 100) + x_] -> color_
     </code></pre>
-    </datails>  
+    </details>    
 
 - 点の移動速度がかなり遅い。問題はどこにある？
 - 四角が動かないという状態は狙い通りだが、この四角、同じ位置・大きさ・色で何回も描いているのである。それ自体は問題ない。
@@ -1766,7 +1765,7 @@
         if (0 <= x_) * (x_ <= 99) * (0 <= y_) * (y_ <= 99)
             memory[60000 + (y_ * 100) + x_] -> color_
     </code></pre>
-    </datails>  
+    </details>    
 
 ---
 ---
