@@ -1012,8 +1012,7 @@
    
     def point(x_, y_, color_)
         memory[60000 + (y_ * 100) + x_] -> color_
-    </code></pre>
-    </datails>  
+    </code></pre></datails>
 
 - 不満な要素を洗い出す
     - `y -> 90` に変更して実行してほしい
